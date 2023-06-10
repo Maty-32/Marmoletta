@@ -1,0 +1,57 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000000;
+
+}
+
+header {
+    background-image: url(../../img/Granito-negro.png);
+    min-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    margin: 0px 0px 0px 100px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-right: 100px;
+    font-size: 20px;
+    background-color: #000000;
+}
+
+li {
+    margin: 10px;
+}
+
+.contenedor-img {
+    display: flex;
+    height: 320px;
+    padding-left: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
