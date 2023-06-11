@@ -1,11 +1,24 @@
-const prev = document.querySelector(".prev")
-const next = document.querySelector(".next")
-const slider = document.querySelector(".contenedor-carrucel")
+const contenedor = document.querySelector(".contenedor");
+const punto = document.querySelectorAll(".punto");
+let counter = 0
 
-prev.addEventListener("click", () => {
-    slider.scrollLeft -= 1000
-})
+punto.forEach((cadaPunto, i) => {
+    punto[i].addEventListener(`click`, () => {
+        let posicion = i;
+        let operacion = posicion * -20;
 
-next.addEventListener("click", () => {
-    slider.scrollLeft += 1000
-})
+        contenedor.style.transform = `translateX(${operacion}%)`;
+
+        punto.forEach((cadaPunto, i) => {
+            punto[i].classList.remove(`activo`);
+        });
+        punto[i].classList.add(`activo`);
+    });
+});
+
+
+
+
+
+
+

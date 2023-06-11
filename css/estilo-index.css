@@ -5,6 +5,9 @@
 
 body {
     background-color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -34,12 +37,12 @@ a {
     color: #ffffff;
 }
 
-div {
+header div {
     display: flex;
     justify-content: space-around;
 }
 
-ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -49,71 +52,49 @@ ul {
     background-color: #000000;
 }
 
-li {
+nav ul li {
     margin: 10px;
 }
-
-main {
-    color: #ffffff;
+.carrousel{
+    width: 100%;
+    max-width: 120em;
 }
+.contenedor{
+    width: 500%;
 
-.contenedor-carrucel {
     display: flex;
-    height: 500px;
-    overflow: hidden;
-}
+    flex-flow:row nowrap ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
 
-.contenedor-img {
+    transition: all .5s ease;
+
+}
+.contenedor img{
+    width: calc( 100% / 5 );
+    min-height: 10vh;
+    height: 100vh;
+    
+}
+.carrousel .puntos{
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0 0;
+    background-color: #ffffff;
+
     display: flex;
-    flex-direction: row;
-    height: 500px;
+    flex-flow:row nowrap ;
+    justify-content: center;
+    align-items: center;
+}
+.carrousel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 1em;
+    background-color: black;
 }
 
-.img-fondo {
-    height: 500px;
-    display: flex;
-}
-.img-fondo img{
-    height: 500px;
-    width: 1000px;
-    object-fit: cover;
-}
-
-/* ------------------ */
-/*      Flechas       */
-/* ------------------ */
-.prev{
-    height: 30px;
-    width: 30px;
-    top: 50%;
-    left: 0;
-    background-color: #ffffffa1;
-    position: absolute;
-    border-radius: 50%;
-    padding: 5px;
-    margin-left: 20px;
-    object-fit: cover;
-    cursor: pointer;
-    transform: translate(-50%,-50%);
-}
-
-.prev:hover{
-    background-color: white;
-}
-.next{
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    background-color: #ffffffa1;
-    border-radius: 50%;
-    padding: 5px;
-    margin-right: 20px;
-    object-fit: cover;
-    cursor: pointer;
-    top: 50%;
-    right: 0;
-    transform: translate(50%,-50%);
-}
-.next:hover{
-    background-color:#ffffff;
+.carrousel .punto.activo{
+    background-color: aqua;
 }
