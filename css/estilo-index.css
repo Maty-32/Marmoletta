@@ -58,6 +58,9 @@ nav ul li {
 .carrousel{
     width: 100%;
     max-width: 120em;
+
+    
+
 }
 .contenedor{
     width: 500%;
@@ -67,9 +70,15 @@ nav ul li {
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-
-    transition: all .5s ease;
-
+    transition: all .8s ease;
+}
+.contenedor-puntos{
+    display: flex;
+    flex-flow:column nowrap ;
+    justify-content: center;
+    align-items: center;
+    margin-top:-150px ;
+    position: relative;
 }
 .contenedor img{
     width: calc( 100% / 5 );
@@ -78,10 +87,10 @@ nav ul li {
     
 }
 .carrousel .puntos{
-    width: 100%;
-    padding: 1em;
-    margin: 1em 0 0;
-    background-color: #ffffff;
+    width: 50%;
+    border-radius: 10px;
+    margin: .5em 0 0;
+    padding: .5em;
 
     display: flex;
     flex-flow:row nowrap ;
@@ -89,12 +98,15 @@ nav ul li {
     align-items: center;
 }
 .carrousel .punto{
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
     margin: 1em;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    list-style: none;
+   
 }
 
 .carrousel .punto.activo{
-    background-color: aqua;
+    background-color: rgb(243, 243, 243);
 }
