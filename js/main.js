@@ -22,6 +22,7 @@ setInterval(() => {
    index++
    if (index==5) {
     index = 0
+    contenedor.style.transition = `(transition: all 0.5s ease)`;
    }
 }, 5000);
 
