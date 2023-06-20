@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/estilo-index.css">
     <title>Marmoleta</title>
 </head>
@@ -26,6 +27,7 @@
             </ul>
         </nav>
     </header>
+    <!-- -------------------------------------------------------------------------------------------------- -->
     <main>
 
         <section class="carrousel">
@@ -50,7 +52,7 @@
         <!-- -------------------------------------------------------------------------------------------------- -->
         <section class="imagenes-a-catalogo">
             <div class="texto-seccion-2">
-                <h2>TENEMOS LOS MEJORES PRECIOS DEL MERCADO</h2>  
+                <h2>TENEMOS LOS MEJORES PRECIOS DEL MERCADO</h2>
             </div>
             <div class="img-catalogo">
                 <div class="mueble"></div>
@@ -65,12 +67,31 @@
 
         </section>
     </main>
-
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <footer>
+        <h3>Dejanos tu consulta</h3>
+        <div class="datos-de-contacto">
+            <div class="datos-marmoleta">
+                Datos de contacto
+            </div>
+            <form action="https://formspree.io/f/mqkorjbl" method="POST">
+                <label id="nombre">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </label>
+                <label id="apellido">
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                </label>
+                <label id="telefono">
+                    <input type="number" name="telefono" placeholder="Numero de telefono" required>
+                </label>
+                <label id="comentario">
+                    <input type="text" name="comentario" placeholder="Escriba su consulta..." required>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
-
-
-
-
 </body>
 
 </html>

@@ -231,16 +231,70 @@ h2 {
     font-size: 1.3em;
     padding: 0.4em;
     width: 13.2em;
-    /*     border-radius: 20%; */
     background-color: rgb(20, 20, 20);
     margin-top: 1em;
     z-index: 10;
+    position: absolute;
 }
 
 .botones-img-catalogo .catalogo-1 {
-    margin-left: 1.8em;
+    margin-left: -45em;
 }
 
 .botones-img-catalogo .trabajo-1 {
-    margin-left: -2.5em;
+    margin-left: -17em;
+}
+
+.botones-img-catalogo .catalogo-2 {
+    margin-left: 17em;
+}
+
+.botones-img-catalogo .trabajo-2 {
+    margin-left: 45em;
+}
+
+footer{
+    height: 25em;
+    margin-top: 8em;
+    background-image: url(../img/Granito-negro.png);
+}
+
+footer h3 {
+    text-align: center; 
+    padding: 0.5em 0em;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.datos-marmoleta{
+    text-align: center;
+ 
+}
+
+.datos-de-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 0;
+    padding: 0;
+}
+input{
+    height: 3em;
+    width: 60%;
+    margin: 0.5em;
+}
+
+input[name="comentario"]{
+    height: 5em;
+}
+
+form button{
+    margin: 1em 43em 0 .5em;
 }
