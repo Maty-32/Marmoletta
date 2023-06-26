@@ -1,15 +1,13 @@
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #c5c5c5;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
-    color: #ffffff;
-
 }
 
 header {
@@ -56,4 +54,116 @@ nav ul {
 
 nav ul li {
     margin: 1em;
+}
+
+/* ---------------------------------------------------------------------- */
+
+main{
+    background-image: url(../img/Muestra/fondo-catalogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250vh;
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+    padding: .4em;
+}
+
+h3{
+    padding-left: 25vh;
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 3vh;
+    font-size: 5vh;
+}
+
+
+/* -------------------------------------- */
+
+.contenedor-nacionales{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 8vh;
+
+}
+.granitos-nacionales{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    padding-top: 4vh;
+}
+
+.granitos-nacionales div{
+    height: 37vh;
+    width: 35vh;
+    background-color: #c2c1c173;
+    margin: 2vh 4vh; 
+}
+.granitos-nacionales img{
+    width: 30vh;
+    height: 30vh;
+    margin: .5vh 1vh;
+    border: 1px solid black;    
+}
+/* 
+.granitos-nacionales .gris-mara{
+    width: 28vh;
+    height: 28vh;
+    background-image: url(../img/Muestra/gris-mara.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.gris-mara:hover::after{
+    opacity: 1;
+}
+.gris-mara::after{
+    width: 28vh;
+    height: 28vh;
+
+    content: "";
+    background-image: url(../img/Trabajo-gris-mara.jpg);
+    inset: 0;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+    opacity: 0;
+} */
+
+/* ------------------------ */
+
+.contenedor-importados{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+.granitos-importados{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    padding-top: 4vh;
+}
+
+.granitos-importados div{
+    height: 37vh;
+    width: 35vh;
+    background-color: #c2c1c173;
+    margin: 2vh 4vh;
+
+}
+.granitos-importados img{
+    width: 30vh;
+    height: 30vh;
+    margin: .5vh 1vh;
+    border: 1px solid black;
 }
